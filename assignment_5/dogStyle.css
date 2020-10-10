@@ -3,9 +3,16 @@
   font-family: "Neue Haas Grotesk Display Pro";
 }
 
- a:link {
-    text-decoration: none;
-  }
+a:link {
+  text-decoration: none;
+}
+
+/* Basic Styling */
+html, body {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+}
 
 /*Nav Bar and Header*/
 .nav {
@@ -96,18 +103,13 @@ img {
     transition-duration: 300ms;
 }
 
-/* Basic Styling */
-html, body {
-  height: 100%;
-  width: 100%;
-  margin: 0;
-}
-
+/* Main page content setup */ 
 .content {
   margin: 0 auto;
   display: flex;
 }
 
+/* Individual container setup */
 .product {
   width: 25%;
   padding-top: 12%;
@@ -116,11 +118,12 @@ html, body {
   padding-left: 1%;
 }
 
+/* Image setup */
 .product img {
   width: auto;
 }
 
-
+/* Line breaks */
 hr.solid {
   position: absolute;
   width: 1px;
@@ -142,7 +145,7 @@ hr.solid {
 
 /* Columns */
 
-/* Product Configuration */
+/* Product configuration */
 .productColor span {
   font-size: 14px;
   font-weight: 400;
@@ -151,7 +154,7 @@ hr.solid {
   display: inline-block;
 }
 
-/* Product Color */
+/* Product color */
 .productColor {
   margin-bottom: 30px;
 }
@@ -198,7 +201,7 @@ hr.solid {
   background-position: center;
 }
 
-
+/* Product detail link button */
 .shopButton {
   padding-top: 5%;
 }
