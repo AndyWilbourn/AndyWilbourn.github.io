@@ -1,0 +1,322 @@
+* {
+    background-color: rgba(236,243,255,1);
+    font-family: "Neue Haas Grotesk Display Pro";
+  }
+
+  a:link {
+    text-decoration: none;
+  }
+
+  /* Basic Styling */
+html, body {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  font-family: 'Roboto', sans-serif;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 15px;
+  display: flex;
+}
+
+  /*Nav Bar and Header*/
+  .nav {
+    width: 100%;
+    height: 83px;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.25);
+    overflow: hidden;
+    z-index: 1;
+  }
+  img {
+    object-fit: contain;
+  }
+  
+  .iconSet {
+    overflow: hidden;
+  }
+  .iconSet:hover {
+    color: #F9739C;
+    transition-delay: 100ms;
+    transition-duration: 300ms;
+  }
+  .iconSet a {
+    float: right;
+    padding: 14px 16px;
+    padding: 0px;
+    margin: 0px;
+    width: 55px;
+    position: absolute;
+    top: 32px;
+  }
+  .searchIcon {
+    right: 72px;
+  }
+  .basketIcon {
+    right: 128px;
+  }
+  .profIcon {
+    right: 178px;
+  }
+  .title {
+    width: 249px;
+    color: rgba(8,49,96,1);
+    position: absolute;
+    top: 8px;
+    left: 50%;
+    font-family: "Dancing Script";
+    font-weight: Bold;
+    font-size: 52px;
+    text-align: center;
+    transform: translate(-50%);
+  }
+  .navLeft {
+    width: 283px;
+    height: 43px;
+    padding: 8px 78px;
+    margin: 24px;
+    opacity: 1;
+    top: 5px;
+    left: 0px;
+    overflow: hidden;
+  }
+  .dogHead {
+    width: 55px;
+    position: absolute;
+    left: 78px;
+    color: #F9739C;
+    font-weight: bold;
+  }
+  .catHead {
+    color: #4A91E5;
+    width: 48px;
+    position: absolute;
+    left: 157px;
+    font-weight: normal;
+  }
+  .headLink {
+    font-family: "Neue Haas Grotesk Display Pro";
+    font-size: 24px;
+    text-align: center;
+    top: 32px;
+  }
+  .headLink:hover{
+      color:#F9739C;
+      transition-delay: 100ms;
+      transition-duration: 300ms;
+  }
+  
+  /* Columns */
+  .leftColumn {
+    width: 65%;
+    position: relative;
+  }
+  
+  .rightColumn {
+    width: 35%;
+    margin-top: 60px;
+  }
+  
+  
+  /* Left Column */
+  .leftColumn img {
+    width: 80%;
+    height: auto;
+    position: absolute;
+    left: 0;
+    top: 0;
+    opacity: 0;
+    /*transition: all 0.3s ease;*/
+  }
+  /*I'll be adding in resposnive image swapping later*/
+  .leftColumn img.active {
+    opacity: 1;
+  }
+  
+  /* Right Column */
+  
+  /* Product Description */
+  .productDescription {
+    border-bottom: 1px solid #E1E8EE;
+    margin-bottom: 20px;
+  }
+  .productDescription span {
+    font-size: 12px;
+    color: #000000;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    text-decoration: none;
+  }
+  .productTitle h1 {
+    font-weight: 500;
+    font-size: 52px;
+    color: rgba(8,49,96,1);
+  }
+  .productDescription p {
+    font-size: 20px;
+    font-weight: 400;
+    color: #000000;
+    line-height: 1.5rem;
+  }
+  
+  /* Product Configuration */
+  .productColor span,
+  .sizeConfig span {
+    font-size: 14px;
+    font-weight: 400;
+    color: #86939E;
+    margin-bottom: 20px;
+    display: inline-block;
+  }
+  
+  /* Product Color */
+  .productColor {
+    margin-bottom: 30px;
+  }
+  
+  .colorChoose div {
+    display: inline-block;
+  }
+  
+  .colorChoose input[type="radio"] {
+    display: none;
+  }
+  
+  .colorChoose input[type="radio"] + label span {
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    margin: -1px 4px 0 0;
+    vertical-align: middle;
+    cursor: pointer;
+    border-radius: 50%;
+  }
+  
+  .colorChoose input[type="radio"] + label span {
+    border: 2px solid #FFFFFF;
+    box-shadow: 0 1px 3px 0 rgba(0,0,0,0.33);
+  }
+  
+  .colorChoose input[type="radio"]#tan + label span {
+    background-color: #E4C7AF;
+  }
+  .colorChoose input[type="radio"]#strawberry + label span {
+    background-color: #E0B1AC;
+  }
+  .colorChoose input[type="radio"]#plum + label span {
+    background-color: #CCBDD0;
+  }
+  .colorChoose input[type="radio"]#navy + label span {
+    background-color: #09254A;
+  }
+  
+  .colorChoose input[type="radio"]:checked + label span {
+    background-image: url(images/check-icn.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+  
+  /* Sizing Configuration */
+  .sizeChoose {
+    margin-bottom: 20px;
+  }
+  
+  .sizeChoose button {
+    border: 2px solid #E1E8EE;
+    border-radius: 6px;
+    padding: 13px 20px;
+    font-size: 14px;
+    color: #5E6977;
+    background-color: #FFFFFF;
+    cursor: pointer;
+  }
+  
+  .sizeChoose button:hover,
+  .sizeChoose button:active,
+  .sizeChoose button:focus {
+    border: 2px solid #86939E;
+    outline: none;
+  }
+  
+  .sizeConfig {
+    border-bottom: 1px solid #E1E8EE;
+    margin-bottom: 20px;
+  }
+  
+  .sizeConfig a {
+    color: #358ED7;
+    text-decoration: none;
+    font-size: 14px;
+    position: relative;
+    margin: 10px 0;
+    display: inline-block;
+  }
+  .sizeConfig a:before {
+    content: "?";
+    height: 15px;
+    width: 15px;
+    border-radius: 50%;
+    border: 2px solid rgba(53, 142, 215, 0.5);
+    display: inline-block;
+    text-align: center;
+    line-height: 16px;
+    opacity: 0.5;
+    margin-right: 5px;
+  }
+  .productCount {
+      display: flex;
+      justify-content: left;
+      position: relative;
+      margin: 10px;
+  }
+  .productCount button {
+    border: 2px solid #E1E8EE;
+    border-radius: 6px;
+    padding: 4px 20px;
+    margin: 20px;
+    font-size: 32px;
+    color: #5E6977;
+    background-color: #fff;
+    cursor: pointer;
+  }
+  .productCount button:hover,
+  .productCount button:active,
+  .productCount button:focus {
+    border: 2px solid #86939E;
+    outline: none;
+  }
+  .productCount h1{
+      outline: none;
+      text-align: match-parent;
+
+  }
+  /* Product Price */
+  .productPrice {
+    display: flex;
+    align-items: center;
+  }
+  
+  .productPrice span {
+    font-size: 26px;
+    font-weight: 300;
+    color: #093161;
+    margin-right: 20px;
+  }
+  
+  .cartBtn {
+    display: inline-block;
+    background-color: #000000;
+    border-radius: 6px;
+    font-size: 28px;
+    color: #FFFFFF;
+    text-decoration: none;
+    padding: 12px 30px;
+  }
+  .cartBtn:hover {
+    color: #F9739C;
+  }
