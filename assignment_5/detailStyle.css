@@ -1,5 +1,5 @@
 * {
-    background-color: rgba(236,243,255,1);
+    background-color: #ecf3ff;
     font-family: "Neue Haas Grotesk Display Pro";
   }
 
@@ -65,7 +65,7 @@ html, body {
   }
   .title {
     width: 249px;
-    color: rgba(8,49,96,1);
+    color: #083160;
     position: absolute;
     top: 8px;
     left: 50%;

@@ -1,9 +1,6 @@
 /*Basic Styling*/
 * {
-    overflow-x: hidden;
-    padding: 0px !important;
-    margin: 0px !important;
-    background-color: rgba(236,243,255,1);
+    background-color: #ecf3ff;
   }
 
   a:link {
@@ -25,9 +22,9 @@
     overflow: hidden;
   }
   .iconSet:hover {
-        color:rgba(249,115,156,1);
-        transition-delay: 100ms;
-        transition-duration: 300ms;
+    color:#F9739C;
+    transition-delay: 100ms;
+    transition-duration: 300ms;
   }
   .iconSet a {
     float: right;
@@ -50,7 +47,7 @@
 
   .title {
     width: 249px;
-    color: rgba(8,49,96,1);
+    color: #083160;
     position: absolute;
     top: 8px;
     left: 50%;
@@ -81,7 +78,7 @@
     left: 157px;
   }
   .headLink {
-    color: rgba(74,145,229,1);
+    color: #4A91E5;
     font-family: "Neue Haas Grotesk Display Pro";
     font-weight: 400;
     font-size: 24px;
@@ -89,7 +86,7 @@
     top: 32px;
   }
   .headLink:hover{
-      color:rgba(249,115,156,1);
+      color:#F9739C;
       transition-delay: 100ms;
       transition-duration: 300ms;
   }
@@ -109,7 +106,7 @@
   }
   .subText{
     width: 555px;
-    color: rgba(74,145,229,1);
+    color: #4A91E5;
     position: absolute;
     top: 238px;
     left: 50%;
@@ -131,7 +128,7 @@
   }
   .catsBig {
     width: 104px;
-    color: rgba(249,115,156,1);
+    color: #F9739C;
     position: absolute;
     top: 0px;
     left: 50%;
@@ -160,7 +157,7 @@
   }
   .dogsBig {
     width: 122px;
-    color: rgba(249,115,156,1);
+    color: #F9739C;
     position: absolute;
     top: 0px;
     left: 50%;
