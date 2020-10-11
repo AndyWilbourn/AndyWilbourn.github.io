@@ -1,6 +1,5 @@
 * {
   background-color: #ecf3ff;
-  font-family: "Neue Haas Grotesk Display Pro", sans-serif;
 }
 
 a:link {
@@ -12,6 +11,7 @@ html, body {
   height: 100%;
   width: 100%;
   margin: 0;
+  font-family: "Neue Haas Grotesk Display Pro", sans-serif;
 }
 
 /*Nav Bar and Header*/
@@ -56,7 +56,7 @@ img {
   right: 178px;
 }
 .title {
-  width: 249px;
+  width: 20%;
   color: #083160;
   position: absolute;
   top: 8px;
@@ -92,7 +92,7 @@ img {
   font-weight: normal;
 }
 .headLink {
-  font-family: 'Neue Haas Grotesk Display Pro';
+  font-family: 'Neue Haas Grotesk Display Pro', sans-serif;
   font-size: 24px;
   text-align: center;
   top: 32px;
@@ -116,7 +116,7 @@ img {
   height: auto;
   display: inline-block;
   padding-left: 1%;
-  font-family: 'Neue Haas Grotesk Display Pro';
+  font-family: 'Neue Haas Grotesk Display Pro', sans-serif;
 }
 
 /* Image setup */
@@ -127,8 +127,8 @@ img {
 /* Line breaks */
 hr.solid {
   position: absolute;
-  width: 1px;
-  height: 80%;
+  width: 0px;
+  height: 60%;
   top: 15%;
 }
 

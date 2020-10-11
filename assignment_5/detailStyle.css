@@ -1,6 +1,5 @@
 * {
     background-color: #ecf3ff;
-    font-family: 'Neue Haas Grotesk Display Pro', sans-serif;
   }
 
   a:link {
@@ -12,7 +11,7 @@ html, body {
   height: 100%;
   width: 100%;
   margin: 0;
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Neue Haas Grotesk Display Pro', sans-serif;
 }
 
 .container {
@@ -102,7 +101,7 @@ html, body {
     font-weight: normal;
   }
   .headLink {
-    font-family: "Neue Haas Grotesk Display Pro";
+    font-family: "Neue Haas Grotesk Display Pro", sans-serif;
     font-size: 24px;
     text-align: center;
     top: 32px;
