@@ -1,6 +1,6 @@
 * {
   background-color: #ecf3ff;
-  font-family: "Neue Haas Grotesk Display Pro";
+  font-family: "Neue Haas Grotesk Display Pro", sans-serif;
 }
 
 a:link {
@@ -92,7 +92,7 @@ img {
   font-weight: normal;
 }
 .headLink {
-  font-family: "Neue Haas Grotesk Display Pro";
+  font-family: 'Neue Haas Grotesk Display Pro';
   font-size: 24px;
   text-align: center;
   top: 32px;
@@ -116,6 +116,7 @@ img {
   height: auto;
   display: inline-block;
   padding-left: 1%;
+  font-family: 'Neue Haas Grotesk Display Pro';
 }
 
 /* Image setup */
