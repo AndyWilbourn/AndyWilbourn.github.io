@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Dog Harness | Muddy Paws</title>
+  <link href="https://fonts.googleapis.com/css?family=Dancing+Script&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://use.typekit.net/rij5puh.css">
+  <link href="https://fonts.googleapis.com/css?family=Merriweather&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css?family=Lato&display=swap" rel="stylesheet" />
+  <link href="detailStyle.css" rel="stylesheet">
+  <!-- Header and Nav -->
+</head>
+<header>
+  <div class="nav">
+    <a href="main.html" class="title">Muddy Paws</a>
+    <div class="navLeft">
+      <span class="dogHead headLink">Dogs</span>
+      <span class="catHead headLink">Cats</span>
+    </div>
+    <div class="iconSet">
+      <a class="searchIcon" href="#search"><img src="images/clarity_search-line.png" alt="Search"></a>
+      <a class="basketIcon" href="#basket"><img src="images/la_shopping-bag-solid.png" alt="Search"></a>
+      <a class="profIcon" href="#profile"><img src="images/bi_person.png" alt="Search"></a>
+    </div>
+  </div>
+</header>
+<!-- Two columns seems easy, with details on the right and images on the left. 
+      Going to add the small supporting images later. -->
+<main class="container">
+  <div class="leftColumn">
+    <img class="active" src="images/tan.png" alt="Tan Harness">
+    <img src="images/blue.png" alt="Navy Harness">
+  </div>
+  <!-- Image column -->
+  <div class="rightColumn">
+
+    <div class="productTitle">
+      <h1>Dog Harness</h1>
+    </div>
+
+    <div class="productConfiguration">
+
+      <div class="productColor">
+        <span>Color</span>
+
+        <div class="colorChoose">
+          <div>
+            <input type="radio" id="tan" name="color" value="tan">
+            <label><span></span></label>
+          </div>
+          <div>
+            <input type="radio" id="strawberry" name="color" value="strawberry">
+            <label><span></span></label>
+          </div>
+          <div>
+            <input type="radio" id="plum" name="color" value="plum">
+            <label><span></span></label>
+          </div>
+          <div>
+            <input type="radio" id="navy" name="color" value="navy">
+            <label><span></span></label>
+          </div>
+        </div>
+      </div>
+
+      <div class="sizeConfig">
+        <span>Size</span>
+
+        <div class="sizeChoose">
+          <button>Tiny</button>
+          <button>Small</button>
+          <button>Medium</button>
+          <button>Large</button>
+        </div>
+
+        <a href="#">Sizing Guide</a>
+      </div>
+
+      <div class="productCount">
+        <button>-</button>
+        <h1>1</h1>
+        <button>+</button>
+      </div>
+
+      <div class="productDescription">
+        <p>Soft, stretchy, and resilient. A cushioned, lightweight harness that’s simple to secure and easy to link up
+          with. An adjustable neck and chest for all shapes and sizes. Three leash attachment points because we all lead
+          in different ways. Probably the smartest harness. </p>
+      </div>
+    </div>
+    <div class="productPrice">
+      <span>$48</span>
+      <a href="#" class="cartBtn">Add to cart</a>
+    </div>
+  </div>
+</main>
+</body>
+
+</html>
