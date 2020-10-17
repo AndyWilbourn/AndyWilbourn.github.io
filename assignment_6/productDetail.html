@@ -10,6 +10,7 @@
   <link href="https://fonts.googleapis.com/css?family=Merriweather&display=swap" rel="stylesheet" />
   <link href="https://fonts.googleapis.com/css?family=Lato&display=swap" rel="stylesheet" />
   <link href="detailStyle.css" rel="stylesheet">
+  <script type="javascript" src="productDetail.js"></script>
   <!-- Header and Nav -->
 </head>
 <header>
@@ -79,10 +80,30 @@
       </div>
 
       <div class="productCount">
-        <button>-</button>
-        <h1>1</h1>
-        <button>+</button>
+        <button onclick="incrementDown()">-</button>
+        <input type="text" class="quant" id="number" value="1" readonly>
+        <button onclick="incrementUp()">+</button>
       </div>
+
+      <script src="productDetail.js">
+        function incrementUp() {
+          var value = parseInt(document.getElementById('number').value, 10);
+          value = isNaN(value) ? 0 : value;
+          value++;
+          document.getElementById('number').value = value;
+        }
+      </script>
+
+      <script src="productDetail.js">
+        function incrementDown() {
+          var value = parseInt(document.getElementById('number').value, 10);
+          value = isNaN(value) ? 0 : value;
+          if (value < 1) {
+            value--;
+          }
+          document.getElementById('number').value = value;
+        }
+      </script>
 
       <div class="productDescription">
         <p>Soft, stretchy, and resilient. A cushioned, lightweight harness that’s simple to secure and easy to link up
