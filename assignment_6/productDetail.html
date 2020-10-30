@@ -10,113 +10,101 @@
   <link href="https://fonts.googleapis.com/css?family=Merriweather&display=swap" rel="stylesheet" />
   <link href="https://fonts.googleapis.com/css?family=Lato&display=swap" rel="stylesheet" />
   <link href="detailStyle.css" rel="stylesheet">
-  <script type="javascript" src="productDetail.js"></script>
-  <!-- Header and Nav -->
 </head>
-<header>
-  <div class="nav">
-    <a href="main.html" class="title">Muddy Paws</a>
-    <div class="navLeft">
-      <span class="dogHead headLink">Dogs</span>
-      <span class="catHead headLink">Cats</span>
+
+<body>
+  <!-- Header and Nav -->
+  <header>
+    <div class="nav" onload="numSet()">
+      <a href="index.html" class="title">Muddy Paws</a>
+      <div class="navLeft">
+        <span class="dogHead headLink" href="dogProduct.html">Dogs</span>
+        <span class="catHead headLink">Cats</span>
+      </div>
+      <div class="iconSet">
+        <a class="searchIcon" href="#search"><img src="images/clarity_search-line.png" alt="Search"></a>
+        <a class="basketIcon" id="basketTest" href="shopCart.html"><img src="images/la_shopping-bag-solid.png" alt="Search"></a>
+        <input type="text" class="quant" id="basketNum" value="0" onload="numSet()" readonly />
+        <a class="profIcon" href="#profile"><img src="images/bi_person.png" alt="Search"></a>
+      </div>
     </div>
-    <div class="iconSet">
-      <a class="searchIcon" href="#search"><img src="images/clarity_search-line.png" alt="Search"></a>
-      <a class="basketIcon" href="#basket"><img src="images/la_shopping-bag-solid.png" alt="Search"></a>
-      <a class="profIcon" href="#profile"><img src="images/bi_person.png" alt="Search"></a>
-    </div>
-  </div>
-</header>
-<!-- Two columns seems easy, with details on the right and images on the left. 
+  </header>
+  <!-- Two columns seems easy, with details on the right and images on the left. 
       Going to add the small supporting images later. -->
-<main class="container">
-  <div class="leftColumn">
-    <img class="active" src="images/tan.png" alt="Tan Harness">
-    <img src="images/blue.png" alt="Navy Harness">
-  </div>
-  <!-- Image column -->
-  <div class="rightColumn">
-
-    <div class="productTitle">
-      <h1>Dog Harness</h1>
+  <main class="container">
+    <div class="leftColumn">
+      <div id="harnessImgs">
+        <img class="harnessImg active" id="tanImg" src="./Images/tan.png" alt="Tan Harness">
+        <img class="harnessImg" id="navyImg" src="./Images/blue.png" alt="Navy Harness">
+        <img class="harnessImg" id="strawImg" src="./Images/strawberry.png" alt="Strawberry Harness">
+        <img class="harnessImg" id="plumImg" src="./Images/plum.png" alt="Plum Harness">
+      </div>
     </div>
+    <!-- Image column -->
+    <div class="rightColumn">
 
-    <div class="productConfiguration">
+      <div class="productTitle">
+        <h1>Dog Harness</h1>
+      </div>
 
-      <div class="productColor">
-        <span>Color</span>
+      <div class="productConfiguration">
 
-        <div class="colorChoose">
-          <div>
-            <input type="radio" id="tan" name="color" value="tan">
-            <label><span></span></label>
-          </div>
-          <div>
-            <input type="radio" id="strawberry" name="color" value="strawberry">
-            <label><span></span></label>
-          </div>
-          <div>
-            <input type="radio" id="plum" name="color" value="plum">
-            <label><span></span></label>
-          </div>
-          <div>
-            <input type="radio" id="navy" name="color" value="navy">
-            <label><span></span></label>
+        <div class="productColor">
+          <span>Color</span>
+
+          <div class="colorChoose">
+            <div>
+              <input type="radio" onclick="setColorT()" id="tan" name="color" value="tan" checked="">
+              <label for="tan"><span></span></label>
+            </div>
+            <div>
+              <input type="radio" onclick="setColorS()" id="strawberry" name="color" value="strawberry">
+              <label for="strawberry"><span></span></label>
+            </div>
+            <div>
+              <input type="radio" onclick="setColorP()" id="plum" name="color" value="plum">
+              <label for="plum"><span></span></label>
+            </div>
+            <div>
+              <input type="radio" onclick="setColorN()" id="navy" name="color" value="navy">
+              <label for="navy"><span></span></label>
+            </div>
           </div>
         </div>
-      </div>
 
-      <div class="sizeConfig">
-        <span>Size</span>
+        <div class="sizeConfig">
+          <span>Size</span>
 
-        <div class="sizeChoose">
-          <button>Tiny</button>
-          <button>Small</button>
-          <button>Medium</button>
-          <button>Large</button>
+          <div class="sizeChoose" id="test1">
+            <button class="sizeBtn" onclick="setSizeT()" id="tiny">Tiny</button>
+            <button class="sizeBtn" onclick="setSizeS()" id="small">Small</button>
+            <button class="sizeBtn" onclick="setSizeM()" id="medium">Medium</button>
+            <button class="sizeBtn" onclick="setSizeL()" id="large">Large</button>
+          </div>
+
+          <a href="#">Sizing Guide</a>
         </div>
 
-        <a href="#">Sizing Guide</a>
+        <div class="productCount">
+          <button onclick="incrementDown()">-</button>
+          <input type="text" class="quant" id="quant" value="1" readonly />
+          <button onclick="incrementUp()">+</button>
+        </div>
+
+        <div class="productDescription">
+          <p>Soft, stretchy, and resilient. A cushioned, lightweight harness that’s simple to secure and easy to link up
+            with. An adjustable neck and chest for all shapes and sizes. Three leash attachment points because we all
+            lead
+            in different ways. Probably the smartest harness. </p>
+        </div>
       </div>
-
-      <div class="productCount">
-        <button onclick="incrementDown()">-</button>
-        <input type="text" class="quant" id="number" value="1" readonly>
-        <button onclick="incrementUp()">+</button>
-      </div>
-
-      <script src="productDetail.js">
-        function incrementUp() {
-          var value = parseInt(document.getElementById('number').value, 10);
-          value = isNaN(value) ? 0 : value;
-          value++;
-          document.getElementById('number').value = value;
-        }
-      </script>
-
-      <script src="productDetail.js">
-        function incrementDown() {
-          var value = parseInt(document.getElementById('number').value, 10);
-          value = isNaN(value) ? 0 : value;
-          if (value < 1) {
-            value--;
-          }
-          document.getElementById('number').value = value;
-        }
-      </script>
-
-      <div class="productDescription">
-        <p>Soft, stretchy, and resilient. A cushioned, lightweight harness that’s simple to secure and easy to link up
-          with. An adjustable neck and chest for all shapes and sizes. Three leash attachment points because we all lead
-          in different ways. Probably the smartest harness. </p>
+      <div class="productPrice">
+        <span>$48</span>
+        <a href="#" class="cartBtn" onclick="objPush()">Add to cart</a>
       </div>
     </div>
-    <div class="productPrice">
-      <span>$48</span>
-      <a href="#" class="cartBtn">Add to cart</a>
-    </div>
-  </div>
-</main>
+  </main>
+  <script src="productDetail.js"></script>
 </body>
 
 </html>

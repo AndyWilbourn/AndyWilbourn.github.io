@@ -13,18 +13,22 @@
 </head>
 
 <body>
-  <div class="nav">
-    <span class="title">Muddy Paws</span>
-    <div class="navLeft">
-      <a href="dogProduct.html" class="dogHead headLink">Dogs</a>
-      <span class="catHead headLink">Cats</span>
+  <!-- Header and Nav -->
+  <header>
+    <div class="nav">
+      <a href="main.html" class="title">Muddy Paws</a>
+      <div class="navLeft">
+        <span class="dogHead headLink">Dogs</span>
+        <span class="catHead headLink">Cats</span>
+      </div>
+      <div class="iconSet">
+        <a class="searchIcon" href="#search"><img src="images/clarity_search-line.png" alt="Search"></a>
+        <a class="basketIcon" id="basketTest" href="#basket"><img src="images/la_shopping-bag-solid.png" alt="Search"></a>
+        <input type="text" class="quant" id="basketNum" value="1" onload="numSet()" readonly />
+        <a class="profIcon" href="#profile"><img src="images/bi_person.png" alt="Search"></a>
+      </div>
     </div>
-    <div class="iconSet">
-      <a class="searchIcon" href="#search"><img src="images/clarity_search-line.png" alt="Search"></a>
-      <a class="basketIcon" href="#basket"><img src="images/la_shopping-bag-solid.png" alt="Search"></a>
-      <a class="profIcon" href="#profile"><img src="images/bi_person.png" alt="Search"></a>
-    </div>
-  </div>
+  </header>
   <main>
     <span class="heroText">Hiking Gear for our furry friends!</span>
     <span class="subText">What type of pet are you buying for today?</span>
@@ -42,6 +46,7 @@
       </div>
     </a>
   </main>
+  <script src="cartNum.js"></script>
 </body>
 
 </html>

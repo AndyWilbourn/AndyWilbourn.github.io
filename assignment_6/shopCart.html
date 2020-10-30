@@ -1,0 +1,68 @@
+<!----------------------------
+Name: Judy Chun
+cart.html is the shopping bag page 
+----------------------------->
+<html>
+<head>
+	<!-- Linking to the CSS stylesheet -->
+	<link rel="stylesheet" type="text/css" href="./cartStyle.css"></link>
+	<!-- Linking to jQuery -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+	<!-- Linking to JavaScript -->
+	<script type="text/javascript" src="./shopCart.js"></script>
+	
+</head>
+
+<body>
+    <header>
+        <div class="nav">
+          <a href="main.html" class="title">Muddy Paws</a>
+          <div class="navLeft">
+            <span class="dogHead headLink">Dogs</span>
+            <span class="catHead headLink">Cats</span>
+          </div>
+          <div class="iconSet">
+            <a class="searchIcon" href="#search"><img src="images/clarity_search-line.png" alt="Search"></a>
+            <a class="basketIcon" id="basketTest" href="#basket"><img src="images/la_shopping-bag-solid.png"
+                alt="Search"></a>
+            <a class="profIcon" href="#profile"><img src="images/bi_person.png" alt="Search"></a>
+          </div>
+        </div>
+      </header>
+
+	<br>
+
+	<!-- Putting headers -->
+	<div class = "timeline">
+		<h2>Shopping Bag (2)</h2>
+	</div>
+
+	<!-- Placing the labelings for cart item and price -->
+	<div class="cart-header">
+		<p class="split-header">Item<span>Price</span></p>
+		<hr>
+
+	</div>
+
+	<!-- Creating content for cart -->
+	<div class="cart-body">
+		<!--<div id="placeholder"></div>-->
+	</div>
+	<br>
+	<hr>
+	<br>
+	<div class="cart-total">
+		<p class="cart-total-split cart-total-description">Subtotal<span id="subtotal">$90.00</span></p>
+		<br>
+		<p class="cart-total-split cart-total-description">Shipping<span id="shipping">Free</span></p>
+		<br>
+		<p class="cart-total-split cart-total-description">Estimated tax (PA 6%)<span id="tax">$0.00</span></p>
+		<hr>
+		<p class="cart-total-split cart-total-description">Estimated total<span id="total">$90.00</span></p>
+		<a href="#checkout"><button class="cart-button">Checkout</button></a>
+	</div>
+
+
+
+</body>
+</html>

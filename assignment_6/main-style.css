@@ -1,9 +1,10 @@
 /*Basic Styling*/
 * {
     overflow-x: hidden;
-    padding: 0px !important;
-    margin: 0px !important;
+    padding: 0px;
+    margin: 0px;
     background-color: rgba(236,243,255,1);
+    font-family: "Neue Haas Grotesk Display Pro", sans-serif;
   }
 
   a:link {
@@ -19,10 +20,20 @@
     left: 0px;
     box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.25);
     overflow: hidden;
+    display: inline-flex;
+    justify-content: space-between;
     z-index: 1;
   }
+  img {
+    object-fit: contain;
+  }
+  
   .iconSet {
     overflow: hidden;
+    display: inline-flex;
+    margin: 10px 0;
+    padding: 10px 0;
+    width: 200px;
   }
   .iconSet:hover {
         color:rgba(249,115,156,1);
@@ -30,23 +41,40 @@
         transition-duration: 300ms;
   }
   .iconSet a {
-    float: right;
-    padding: 14px 16px;
-    padding: 0px;
-    margin: 0px;
-    width: 55px;
-    position: absolute;
-    top: 32px;
+    margin: 0 auto;
+    width: 40px;
+    justify-content: center;
+    top: 50%;
+    display: inline-block;
   }
   .searchIcon {
-    right: 72px;
+    display: inline-block;
   }
   .basketIcon {
-    right: 128px;
+    display: inline-block;
+  }
+  #basketTest {
+    width: 30px;
+    z-index: 1;
+  }
+  #basketNum {
+    color: #4A91E5;
+    font-weight: 500;
   }
   .profIcon {
-    right: 178px;
+    right: inline-block;
   }
+
+  .quant{
+    outline: none;
+    text-align: center;
+    justify-content: center;
+    text-decoration: none;
+    font-size: 150%;
+    width: 10%;
+    border: none;
+    z-index: 1;
+}
 
   .title {
     width: 249px;
