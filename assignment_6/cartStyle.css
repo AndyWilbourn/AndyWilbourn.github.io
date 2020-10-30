@@ -245,63 +245,51 @@
   }
   
   /* Columns */
-  
-  /* Product Configuration */
-  .productColor span {
-    font-size: 14px;
-    font-weight: 400;
-    color: #86939E;
-    margin-bottom: 20px;
-    display: inline-block;
+
+  .itemCont {
+    display: flex;
+    margin: auto;
+    justify-content: space-around;
+    width: 40%;
+    flex-direction: row;
   }
-  
-  /* Product Color */
-  .productColor {
-    margin-bottom: 30px;
+
+  .itemImg {
+    width: 140px;
+    height: auto;
   }
-  
-  .colorChoose div {
-    display: inline-block;
+
+  #tanImg {
+    width: 140px;
+    height: auto;
   }
-  
-  .colorChoose input[type="radio"] {
-    display: none;
+
+  .itemDetails {
+    display: flex;
+    flex-direction: column;
+    margin: 0%;
+    justify-content: center;
+    height: 175px;
   }
-  
-  .colorChoose input[type="radio"] + label span {
-    display: inline-block;
-    width: 20px;
-    height: 20px;
-    margin: -1px 4px 0 0;
-    vertical-align: middle;
-    cursor: pointer;
-    border-radius: 50%;
+
+  .itemPrice {
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    margin: 20px;
+    justify-content: flex-start;
+    justify-content: space-evenly;
   }
-  
-  .colorChoose input[type="radio"] + label span {
-    border: 2px solid #FFFFFF;
-    box-shadow: 0 1px 3px 0 rgba(0,0,0,0.33);
+
+  .removal {
+    text-decoration: underline;
   }
-  
-  .colorChoose input[type="radio"].tan + label span {
-    background-color: #E4C7AF;
+
+  .removal :hover {
+    text-decoration: underline;
+    color: #F9739C;
+    
   }
-  .colorChoose input[type="radio"].strawberry + label span {
-    background-color: #E0B1AC;
-  }
-  .colorChoose input[type="radio"].plum + label span {
-    background-color: #CCBDD0;
-  }
-  .colorChoose input[type="radio"].navy + label span {
-    background-color: #09254A;
-  }
-  /*Adding this for making the buttons clickable later*/
-  .colorChoose input[type="radio"]:checked + label span {
-    background-image: url(images/check-icn.svg);
-    background-repeat: no-repeat;
-    background-position: center;
-  }
-  
   
   .shopButton {
     padding-top: 5%;
@@ -315,7 +303,7 @@
     font-size: 16px;
     color: #000000;
     text-decoration: none;
-    width: 89%;
+    width: 100%;
     padding: 15px;
     text-align: center;
   }
