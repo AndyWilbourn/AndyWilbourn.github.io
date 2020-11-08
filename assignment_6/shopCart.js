@@ -32,7 +32,7 @@ function cartLoad() {
         // alert(subtotal)
     } else {
         alert('Your cart is empty!');
-        listOfProducts.innerHTML += '<div class="itemCont"> <img id="stwImg" src="./Images/cartStw.png" alt="Strawberry Harness"><div class="itemDetails"><h2>Dog Harness</h2> <div class="sizeName">Size: ' + size + '</div> <div class="colorName">Color: ' + color + '</div> </div><div class="itemPrice"><h4>' + quant + 'x $48:    $' + total + '.00</h4> <span onclick="deleteProduct(' + i + ')">[click to delete]</span> </div> </div>';
+            listOfProducts.innerHTML += '<div class="itemCont"><h1 class = "emptyHero">Your basket is empty.</h1><h3 class="linkBack" href = "index.html">Click here to continue browsing.</h3>';
     }
     // Update total and subtotal with the total cost of the items in the basket
     document.getElementById('subtotal').innerHTML = '$' + subtotal.toFixed(2);

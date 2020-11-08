@@ -332,9 +332,11 @@ html, body {
     color: #FFFFFF;
     text-decoration: none;
     padding: 12px 30px;
+    cursor: pointer;
   }
   .cartBtn:hover {
     color: #F9739C;
     transition-delay: 200ms;
     transition: ease-in-out;
+    cursor: pointer;
   }
