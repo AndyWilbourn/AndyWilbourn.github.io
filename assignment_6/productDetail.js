@@ -5,10 +5,6 @@ let prod = {
   total: 48
 }
 
-var cartCount = {
-  counter: 0
-}
-
 function numSet() {
   localStorage.clear();
   var cartCurrent = JSON.parse(localStorage.getItem('cart'));
@@ -58,24 +54,24 @@ for (var i = 0; i < buttons.length; i++) {
 }
 
 function setSizeT() {
-  prod.size = 'tiny';
+  prod.size = 'Tiny';
   //console.log(prod.size);//
 }
 function setSizeS() {
-  prod.size = 'small';
+  prod.size = 'Small';
   //console.log(prod.size);//
 }
 function setSizeM() {
-  prod.size = 'medium';
+  prod.size = 'Medium';
   //console.log(prod.size);//
 }
 function setSizeL() {
-  prod.size = 'large';
+  prod.size = 'Large';
   //console.log(prod.size);//
 }
 
 function setColorT() {
-  prod.color = 'tan';
+  prod.color = 'Tan';
   //console.log(prod.color);//
   radio = document.getElementById('tan');
   radio.checked = true;
@@ -85,7 +81,7 @@ function setColorT() {
   newImg.className += " active";
 }
 function setColorS() {
-  prod.color = 'strawberry';
+  prod.color = 'Strawberry';
   //console.log(prod.color);//
   radio = document.getElementById('strawberry');
   radio.checked = true;
@@ -96,7 +92,7 @@ function setColorS() {
 
 }
 function setColorP() {
-  prod.color = 'plum';
+  prod.color = 'Plum';
   //console.log(prod.color);//
   radio = document.getElementById('plum');
   radio.checked = true;
@@ -106,7 +102,7 @@ function setColorP() {
   newImg.className += " active";
 }
 function setColorN() {
-  prod.color = 'navy';
+  prod.color = 'Navy';
   //console.log(prod.color);//
   radio = document.getElementById('navy');
   radio.checked = true;

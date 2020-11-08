@@ -1,94 +1,91 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
+
 <head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Your Basket | Muddy Paws</title>
+  <link href="https://fonts.googleapis.com/css?family=Dancing+Script&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://use.typekit.net/rij5puh.css">
+  <link href="https://fonts.googleapis.com/css?family=Merriweather&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css?family=Lato&display=swap" rel="stylesheet" />
 	<!-- Linking to the CSS stylesheet -->
-	<link rel="stylesheet" type="text/css" href="./cartStyle.css"></link>
+	<link rel="stylesheet" type="text/css" href="./cartStyle.css"/>
 	<!-- Linking to jQuery -->
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 	<!-- Linking to JavaScript -->
-	<script type="text/javascript" src="./shopCart.js"></script>
-	
+	<script src="./shopCart.js"></script>
+
 </head>
 
-<body>
-   
+<body onload="cartLoad()">
+
 
 	<!-- Putting headers -->
-	<div class = "content">
+	<div class="content">
 		<header>
 			<div class="nav">
-			  <a href="index.html" class="title">Muddy Paws</a>
-			  <div class="navLeft">
-				<span class="dogHead headLink">Dogs</span>
-				<span class="catHead headLink">Cats</span>
-			  </div>
-			  <div class="iconSet">
-				<a class="searchIcon" href="#search"><img src="./Images/clarity_search-line.png" alt="Search"></a>
-				<a class="basketIcon" id="basketTest" href="#basket"><img src="./Images/la_shopping-bag-solid.png"
-					alt="Basket"></a>
-				<a class="profIcon" href="#profile"><img src="./Images/bi_person.png" alt="Profile"></a>
-			  </div>
+				<a href="index.html" class="title">Muddy Paws</a>
+				<div class="navLeft">
+					<a class="dogHead headLink" href="dogProduct.html">Dogs</a>
+					<span class="catHead headLink">Cats</span>
+				</div>
+				<div class="iconSet">
+					<a class="searchIcon" href="#search"><img src="./Images/clarity_search-line.png" alt="Search"></a>
+					<a class="basketIcon" id="basketTest" href="#basket"><img src="./Images/la_shopping-bag-solid.png"
+							alt="Basket"></a>
+					<a class="profIcon" href="#profile"><img src="./Images/bi_person.png" alt="Profile"></a>
+				</div>
 			</div>
-		  </header>
-	
+		</header>
+
 		<br>
-		<div class = "timeline">
-			<div class = "timelineTop">
-				<span class = "filledDot"></span>
-				<hr class = "timelineLine">
-				<span class = "unfilledDot"></span>
-				<hr class = "timelineLine">
-				<span class = "unfilledDot"></span>
+		<div class="timeline">
+			<div class="timelineTop">
+				<span class="filledDot"></span>
+				<hr class="timelineLine">
+				<span class="unfilledDot"></span>
+				<hr class="timelineLine">
+				<span class="unfilledDot"></span>
 			</div>
 			<br>
-			<div class = "timelineBottom">
-				<span class = "timeLabelCurrent">Basket</span>
-				<span class = "timeLabel">Shipping</span>
-				<span class = "timeLabel">Checkout</span>
+			<div class="timelineBottom">
+				<span class="timeLabelCurrent">Basket</span>
+				<span class="timeLabel">Shipping</span>
+				<span class="timeLabel">Checkout</span>
 			</div>
 		</div>
-		
-		<h2 class = "shopCartTitle">Basket:     2 Items</h2>
+
+		<h2 class="shopCartTitle">Basket</h2>
 		<hr class="solidBreak">
 		<!-- Placing the labelings for cart item and price -->
 		<div class="cart-header">
-			<span class = "cartSub">Item</span>
-			<span class = "cartSub">Price</span>
-			<hr>
-	
-		</div>
-	<div class = ""></div>
-		<!-- Creating content for cart -->
-		<div class="cart-body">
+			<span class="cartSub">Item</span>
+			<span class="cartSub">Details</span>
+			<span class="cartSub">Price</span>
 		</div>
 		<br>
-		<div class = "itemCont">
-			<div class = "itemImg">
-				<img id="tanImg" src="./Images/cartImg1.png" alt="Tan Harness">
-			</div>
-			<div class = "itemDetails">
-				<h2>Dog Harness</h2>
-				<h5>Size: Medium</h5>
-				<h5>Color: Blueberry</h5>
-			</div>
-			<div class = "itemPrice">
-				<h4>2 x $48</h4>
-				<h4 class = "removal">Remove</h4>
-			</div>
+		<div class=""></div>
+		<!-- Creating content for cart -->
+		<div class="cart-body" id='prodList'>
 		</div>
+		<!-- <br> -->
 		<hr>
 		<hr class="solidBreak">
 		<div class="cart-total">
 			<p class="cart-total-split cart-total-description">Subtotal<span id="subtotal">$96.00</span></p>
-			<br>
+			<!-- <br> -->
 			<p class="cart-total-split cart-total-description">Shipping<span id="shipping">Free</span></p>
-			<br>
-			<p class="cart-total-split cart-total-description">Estimated tax (PA 6%)<span id="tax">$0.00</span></p>
+			<!-- <br> -->
+			<p class="cart-total-split cart-total-description">Estimated tax (PA 6%)<span id="deathAnd">$0.00</span></p>
 			<hr>
-			<p class="cart-total-split cart-total-description">Estimated total<span id="total">$96.00</span></p>
-			<a href="#checkout"><button class="prodBtn">Move to Shipping</button></a>
+			<p class="cart-total-split cart-total-description">Total<span id="total">$96.00</span></p>
+			<button class="prodBtn">Move to Shipping</button>
 		</div>
+		<br>
 	</div>
-	
+
 
 </body>
+
 </html>
