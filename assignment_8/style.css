@@ -28,10 +28,9 @@
     }
 
     .content {
-        padding-left: 30px;
+        padding-left: 8%;
         display: inline-flex;
         justify-content: space-between;
-        justify-self: center;
     }
     
     .spacer {

@@ -102,9 +102,9 @@ function initMap() {
 
   ]; // Pittsburgh Route
   const map = new google.maps.Map(document.getElementById("map"), {
-    zoom: 12,
-    center: path[1],
-    mapTypeId: "terrain",
+    zoom: 13,
+    center: path[55],
+    mapTypeId: "roadmap",
   });
   // Create an ElevationService.
   const elevator = new google.maps.ElevationService();
