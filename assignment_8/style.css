@@ -127,6 +127,7 @@
   .grad {
     background: -webkit-linear-gradient(#439CA1, #7C84C9);
     -webkit-background-clip: text;
+    background-clip: text;
     -webkit-text-fill-color: transparent;
   }
 
@@ -193,7 +194,7 @@
     font-weight: bolder;
 }
 
-/* Setting up responsive breaking for the cards */
+/* Setting up responsive breaking for the cards in large format */
 @media (min-width: 1025px) {
   .card-body,
   .content {
