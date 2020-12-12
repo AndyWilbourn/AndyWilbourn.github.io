@@ -2,8 +2,8 @@
 google.load("visualization", "1", { packages: ["columnchart"] });
 
 function initMap() {
-  // The following path marks a path from Mt. Whitney, the highest point in the
-  // continental United States to Badwater, Death Valley, the lowest point.
+  // The following path marks a path I've determined from a bike route I ride.
+  // It loops from Shadyside out through Squirrel Hill and back.
   const path = [
     { lat: 40.454417, lng: -79.93127 },
     { lat: 40.455178, lng: -79.931769 },
