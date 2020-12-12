@@ -102,7 +102,7 @@ function initMap() {
 
   ]; // Pittsburgh Route
   const map = new google.maps.Map(document.getElementById("map"), {
-    zoom: 13,
+    zoom: 12,
     center: path[55],
     mapTypeId: "roadmap",
   });
@@ -126,7 +126,7 @@ function displayPathElevation(path, elevator, map) {
   elevator.getElevationAlongPath(
     {
       path: path,
-      samples: 100,
+      samples: 250,
     },
     plotElevation
   );
@@ -158,7 +158,7 @@ function plotElevation(elevations, status) {
   }
   // Draw the chart using the data within its DIV.
   chart.draw(data, {
-    height: 150,
+    height: 100,
     legend: "none",
     titleY: "Elevation (m)",
   });

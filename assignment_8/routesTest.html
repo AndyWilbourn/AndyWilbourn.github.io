@@ -13,7 +13,7 @@
         rel="stylesheet">
     <link rel="stylesheet" href="https://use.typekit.net/rij5puh.css">
     <link href="./style.css" rel="stylesheet" />
-
+    <script src="bike.js"></script>
 </head>
 
 <body>
@@ -26,8 +26,8 @@
                 <a class="navbar-brand d-none d-lg-inline-block" href="./index.html">
                     Ride the Burgh
                 </a>
-                <a class="navbar-brand-two mx-auto d-lg-none d-inline-block" href="./index.html">
-                    <img src="./images/Vector@2x.png" alt="logo">
+                <a class="navbar-brand-two mx-auto d-lg-none d-inline-block" href="#">
+                    <img src="./images/logo.svg" alt="logo">
                 </a>
                 <div class="w-100 text-right">
                     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#myNavbar">
@@ -35,34 +35,36 @@
                     </button>
                 </div>
             </div>
-            <!-- Collapsable Links -->
             <div class="collapse navbar-collapse flex-grow-1 text-right" id="myNavbar">
                 <ul class="navbar-nav ml-auto flex-nowrap">
                     <li class="nav-item">
                         <a href="#" class="nav-link m-2 menu-item nav-active">Routes</a>
                     </li>
                     <li class="nav-item">
-                        <a href="./resources.html" class="nav-link m-2 menu-item">Resources</a>
+                        <a href="#" class="nav-link m-2 menu-item">Resources</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link m-2 menu-item">Search</a>
                     </li>
                 </ul>
             </div>
         </nav>
     </header>
 
-    <div class="jumbotron-fluid">
+    <div class="jumbotron jumbotron-fluid">
         <div class="container">
-            <br> <br>
-            <h1 class="hero2 grad">Routes</h1>
+            <h1 class="hero2 grad"><br>Routes </h1>
         </div>
     </div>
-    <!-- Add in the content, being the route cards, and make them responsive using the Bootstrap columns and media queries. -->
-    <div class="routeCards container-fluid span12">
+
+    <div class="routeCards container-fluid">
         <div class="card row">
             <a href="./route1.html" class="stretched-link">
                 <div class="card-body">
-                    <img class="trailPre order-sm-1" src="./images/map2.png" alt="Squirrel Hill Loop">
-                    <div class="cardFill col-sm-4 order-sm-2">
-                        <h2 class="hero2 grad">Squirrel Hill Loop</h2>
+                    <img class="trailPre col-sm order-sm-1" src="./images/map2.png" alt="Squirrel Hill Loop">
+                    <div class="cardFill col-sm order-sm-2">
+                        <h2 class="card-title">Squirrel Hill Loop</h2>
+                        <br>
                         <p class="card-text">
                             Length: 10 miles <br class="d-none d-lg-block"><br>
                             Effort: Enthusiast <br class="d-none d-lg-block"><br>
@@ -70,8 +72,7 @@
                             Slope Score: 7 out of 10
                         </p>
                     </div>
-                    <!-- Hiding the description on mobile to de-clutter, will apply to all cards -->
-                    <div class="order-sm-3 col-sm-4 cardDes d-none d-lg-block">
+                    <div class="order-sm-3 col-sm cardDes">
                         <br>
                         <br class="d-none d-lg-block">
                         <br class="d-none d-lg-block">
@@ -87,23 +88,24 @@
             <br>
             <a href="./route1.html" class="stretched-link">
                 <div class="card-body">
-                    <img class="order-sm-1 trailPre" src="./images/map1.png" alt="Allegheny River Trail">
-                    <div class="cardFill col-sm-4 order-sm-2">
-                        <h2 class="hero2 grad">Allegheny River Trail</h2>
+                    <img class=trailPre src="./images/map1.png" alt="Allegheny River Trail">
+                    <div class=cardFill>
+                        <h2 class="card-title">Allegheny River Trail</h2>
+                        <br>
                         <p class="card-text">Length: 5 miles <br class="d-none d-lg-block"><br>
                             Effort: Casual <br class="d-none d-lg-block"><br>
                             Type: Out and Back <br class="d-none d-lg-block"><br>
                             Slope Score: 2 out of 10
                         </p>
                     </div>
-                    <div class="order-sm-3 col-sm-4 cardDes  d-none d-lg-block">
+                    <div class=cardDes>
                         <br>
                         <br class="d-none d-lg-block">
                         <br class="d-none d-lg-block">
                         <p class=des>
-                            This casual ride along the river will take you past
-                            some of the most outstanding examples of the
-                            architecture of the city, taking you right to
+                            This casual ride along the river will take you past 
+                            some of the most outstanding examples of the 
+                            architecture of the city, taking you right to 
                             Point Park and back to the 31st St Bridge.
                         </p>
                     </div>
@@ -112,20 +114,21 @@
             <br>
             <a href="./route1.html" class="stretched-link">
                 <div class="card-body">
-                    <img class="order-sm-1 trailPre" src="./images/map3.png" alt="Squirrel Hill Loop">
-                    <div class="cardFill col-sm-4 order-sm-2">
-                        <h2 class="hero2 grad">McCandless Out and Back</h2>
-                        <p class="card-text">Length: 32 miles <br class="d-none d-lg-block"><br>
-                            Effort: Roadie <br class="d-none d-lg-block"><br>
-                            Type: Out and Back <br class="d-none d-lg-block"><br>
-                            Slope Score: 9 out of 10
+                    <img class=trailPre src="./images/map1.png" alt="Squirrel Hill Loop">
+                    <div class=cardFill>
+                        <h2 class="card-title">Squirrel Hill Loop</h2>
+                        <br>
+                        <p class="card-text">Length: 10 miles <br class="d-none d-lg-block"><br>
+                            Effort: Enthusiast <br class="d-none d-lg-block"><br>
+                            Type: Loop <br class="d-none d-lg-block"><br>
+                            Slope Score: 7 out of 10
                         </p>
                     </div>
-                    <div class="order-sm-3 col-sm-4 cardDes  d-none d-lg-block">
+                    <div class=cardDes>
                         <br>
                         <br class="d-none d-lg-block">
                         <br class="d-none d-lg-block">
-                        <p class="des">
+                        <p class=des>
                             This route puts the ‘hill’ in Squirrel Hill. You’ll be
                             taken around the local parks and through local
                             neighborhoods, but you might be hard pressed to
@@ -137,14 +140,15 @@
 
         </div>
     </div>
-    <div class="breaker"></div>
-    <div class="breaker"></div>
+    </div>
+    </div>
+
 
     <div class="bottom">
         <img class="hills2" src="./images/index_hills.png" alt="hills">
     </div>
 
-    <!-- Bootstrap scripting -->
+    </main>
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
         integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
         crossorigin="anonymous"></script>

@@ -1,20 +1,46 @@
+/* Document Wide */
+
 * {
     font-family: Montserrat, sans-serif;
   }
 
+  html,
   body {
     background-color: #D2DFEB;
+    height: 100%;
+    margin: 0;
+    padding: 0;
   }
 
-  .bg-primary {
+  /* For the resources headers */
+  h3 {
+    text-align: center;
+  }
+
+  /* Making Bootstrap conform */
+  .bg-primary,
+  .list-group-flush,
+  .list-group-item {
     background-color: #D2DFEB;
   } 
 
+  /* Changing different hero text properties */
   .hero2 {
       font-weight: 800;
       font-size: 3rem;
   }
 
+  .heroL {
+    font-weight: 800;
+    font-size: 3rem;
+}
+
+  .hero1{
+    font-size: 3.5rem;
+    padding: 300px 0rem 2rem 1rem;
+  } 
+
+/*  NO UNDERLINES ALLOWED */
    a:link {
       text-decoration: none;
     }
@@ -27,12 +53,11 @@
         width: 400px;
     }
 
+    /* Just a wee scooch */
     .content {
-        padding-left: 8%;
-        display: inline-flex;
-        justify-content: space-between;
+        padding-left: 1%;
     }
-    
+    /* Setting up vertical and horizontal spacer blocks */
     .spacer {
         width: 5%;
     }
@@ -40,21 +65,14 @@
     .breaker {
         height: 8%;
     }
-
+    /* Card guts color */
     .textGutsDes {
-        width: 60%;
+        width: 100%;
         color: #7C84C9;
     }
 
-  /* Optional: Makes the sample page fill the window. */
-    html,
-    body {
-        height: 100%;
-        margin: 0;
-        padding: 0;
-    }
-  
-    .navbar {
+    /* Setting up nav bar elements and colors */
+      .navbar {
         -webkit-box-shadow: 0 8px 6px -6px #999;
         -moz-box-shadow: 0 8px 6px -6px #999;
         box-shadow: 0 8px 6px -6px #999;
@@ -62,9 +80,9 @@
         position: fixed;   
         width: 100%;
         z-index: 1;
-    
-        /* the rest of your styling */
     }
+
+/* Setting up fonts and colors and such */
     .navbar-brand {
         font-family: Montserrat, sans-serif;
         color: #439CA1;
@@ -78,8 +96,6 @@
         font-weight: 400;
     }
 
-
-  /*Nav Bar and Header*/
    /*Nav Bar and Header*/
    .nav {
     background-color: #D2DFEB;
@@ -95,42 +111,36 @@
     z-index: 1;
   }
   
-  .custom-toggler .navbar-toggler-icon {
-    background-image: url("./images/ham.png");
-    border: none;
-  }
-
-  .navbar-toggler-icon {
-    color: #1B2B1A;
-  }
 
   img {
     width: 100%;
   }
+
+  /* Messing with heros some more */
   .jumbotron {
     background-color: #D2DFEB;
     margin: auto;
+    padding: 5% 5%;
   }
 
+  /* setting up my text gradient */
   .grad {
     background: -webkit-linear-gradient(#439CA1, #7C84C9);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
   }
 
+  /* Setting up Routes clickable along the bottom of the landing */
   .carousel-caption {
       font-size:1.5rem;
     background: -webkit-linear-gradient(#fff, #82B596);
     -webkit-background-clip: text;
+    background-clip: text;
     -webkit-text-fill-color: transparent;
     cursor: pointer;
   }
 
-  .hero1{
-      font-size: 3.5rem;
-      padding: 300px, 0rem, 2rem, 1rem;
-  }
-
+  /* Footer imagery */
   .hills {
       position: fixed;
       bottom: 0px;
@@ -139,47 +149,117 @@
 
   .hills2 {
     position: fixed;
-    background-color: none;
     bottom: 0px;
     height: 20%;
     z-index: 1;
 }
 
+/* Content for the Routes page */
 .card {
-    display: flex;
     background-color: #D2DFEB;
     justify-content: space-between;
+    justify-content: center;
+    align-items: center;
     border: none; 
-    width: 80%;
+    width: 98%;
     cursor: pointer;
 }
 .routeCards {
-    display: flex;
     background-color: #D2DFEB;
     justify-content: center;
+    align-items: center;
     border: none;
-    padding-bottom: 10rem;
+    width: auto;
+    padding-left: 2%;
+    
 }
 
 .cardDes,
 .cardFill {
-    width: 34%;
     color: #439CA1;
 }
-
+/* Setting up the rules for the card content. Kind of a strange frankenstein with Bootstrap */
 .card-body {
-    width: 98%;
+    width: 100%;
     border-radius: 15px;
     background: #D2DFEB;
     box-shadow:  16px 16px 32px #b3bec8, 
                  -16px -16px 32px #f2ffff;
-    display: inline-flex;
+    align-items: center;
     justify-content: space-around;
 }
-
+/* Set up highlighted page */
 .nav-active {
     font-weight: bolder;
 }
+
+/* Setting up responsive breaking for the cards */
+@media (min-width: 1025px) {
+  .card-body,
+  .content {
+    display: flex;
+    }
+
+    h3 {
+      text-align: left;
+    }
+
+    #map {
+      width: 100%;
+    }
+
+    .jumbotron-fluid {
+      padding: 2%;
+    }
+}
+
+/* Set up my mobile conditions, this is mainly for the actual route pages than anything else. */
+@media (max-width: 1024px) {
+  .hero1,
+  .hero3 {
+    font-size: large;
+    padding: 0%;
+  }
+
+
+  .textGutsDes {
+    padding: 0%;
+  }
+
+  .jumbotron-fluid {
+    padding-bottom: 5%;
+    padding-top: 8%;
+  }
+
+  .container-fluid {
+    justify-content: center;
+    padding: 1%;
+  }
+
+  .card-title {
+    padding-top: 5%;
+  }
+  
+  .heroL {
+    font-size: 2rem;
+  }
+
+  .hero2 {
+    font-size: 1.8rem;
+    text-align: center;
+  }
+
+  #map {
+    width: 100%;
+    padding-bottom: 2%;
+  }
+
+  #elevation_chart {
+    width: auto;
+  }
+}
+
+/* Images for the Routes page */
 
 .trailPre {
     width: 335px;
@@ -188,4 +268,21 @@
     background: #D2DFEB;
     box-shadow:  16px 16px 32px #b3bec8, 
                  -16px -16px 32px #f2ffff;
+}
+
+/*  Button instead of hamburger? Who knows. */
+.navbar-toggler {
+  background-color: #7C84C9;
+}
+
+/* Setting up Elevation Charting on mobile */
+
+#elevation_chart {
+  width:100%;
+}
+
+#map {
+  width: 100%;
+  height: 300px;
+  background-color: grey;
 }
